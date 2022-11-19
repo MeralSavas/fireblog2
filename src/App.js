@@ -9,6 +9,7 @@ import Profile from "./pages/Profile/Profile";
 import Register from "./pages/Register/Register";
 import UpdateBlog from "./pages/UpdateBlog/UpdateBlog";
 import About from "./pages/About/About";
+import PrivateRouter from "./router/PrivateRouter";
 
 function App() {
   return (
@@ -16,14 +17,16 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
+          <Route element={<PrivateRouter />}>
+            <Route path="/NewBlog" element={<NewBlog />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/details" element={<Details />} />
+            <Route path="/updateBlog" element={<UpdateBlog />} />
+          </Route>
           <Route path="/about" element={<About />} />
           <Route path="/" element={<DashBoard />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/details" element={<Details />} />
-          <Route path="/NewBlog" element={<NewBlog />} />
-          <Route path="/profile" element={<Profile />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/updateblog" element={<UpdateBlog />} />
         </Routes>
       </BrowserRouter>
     </div>
