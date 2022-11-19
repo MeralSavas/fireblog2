@@ -2,10 +2,11 @@ import {
   CardLike,
   EmailDiv,
   LikeIcon,
-  Messagdiv,
+  MessageDiv,
+  Messagediv,
   MessageIcon,
   UserIcon,
-} from "../../components/Card/Card-styled";
+} from "../../components/card/Card-styled";
 import { DetailsCom, DetailsInfo, Kapsayici } from "./Details-styled";
 
 function Details() {
@@ -33,7 +34,7 @@ function Details() {
             <UserIcon />
             <p>enes@gmail.com</p>
           </EmailDiv>
-          <Messagdiv>
+          <MessageDiv>
             <LikeIcon />
             <p>
               {" "}
@@ -43,7 +44,7 @@ function Details() {
             <p>
               <sup>6</sup>
             </p>
-          </Messagdiv>
+          </MessageDiv>
         </CardLike>
       </Kapsayici>
       <div className="buttoncon">

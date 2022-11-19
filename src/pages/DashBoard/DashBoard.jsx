@@ -1,4 +1,4 @@
-import { AboutCon, AboutDiv, GitIcon, LinkIcon } from "./About-styled";
+import { AboutCon, AboutDiv, GitIcon, LinkIcon } from "./DashBoard-styled";
 
 function About() {
   return (

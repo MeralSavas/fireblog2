@@ -1,9 +1,4 @@
-import {
-  ImgDiv,
-  LoginBloc,
-  LoginCon,
-  LoginInput,
-} from "../Login/login-stayled";
+import { ImgDiv, LoginBloc, LoginCon, LoginInput } from "../Login/Login-styled";
 
 function Register() {
   return (
