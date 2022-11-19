@@ -1,25 +1,37 @@
-import { AboutCon, AboutDiv, GitIcon, LinkIcon } from "./DashBoard-styled";
+import { useState } from "react";
+import Card from "../../components/card/Card";
+import Modal from "../../components/modal/Modal";
+import { Cards, HomeCon } from "./DashBoard-styled";
 
-function About() {
+function Dashboard() {
+  const [modal, setModal] = useState(false);
   return (
-    <div>
-      <AboutCon>
-        <img src="images/coding.svg" alt="" />
-        <h2>About Full-stack Web Developer WeAreBored</h2>
-        <AboutDiv>
-          <h3>I'm Bored.</h3>
-          <p>I'm currently learning full-stack development languages.</p>
-          <p>
-            I've already known JS, ReactJS, React Native, Node MYSQL,Python.
-          </p>
-          <div>
-            <LinkIcon />
-            <GitIcon />
-          </div>
-        </AboutDiv>
-      </AboutCon>
-    </div>
+    <HomeCon>
+      {modal && <Modal />}
+      <h3
+        onClick={(e) => {
+          setModal(true);
+        }}
+      >
+        Dashboard
+      </h3>
+      <Cards>
+        <Card></Card>
+        <Card></Card>
+        <Card></Card>
+        <Card></Card>
+        <Card></Card>
+        <Card></Card>
+        <Card></Card>
+        <Card></Card>
+        <Card></Card>
+        <Card></Card>
+        <Card></Card>
+        <Card></Card>
+        <Card></Card>
+      </Cards>
+    </HomeCon>
   );
 }
 
-export default About;
+export default Dashboard;

@@ -1,13 +1,13 @@
-import Card from "../Card/Card";
-import Comment from "../Comment/Comment";
-import { ModalDiv, Modals, Yorumlar } from "./Modal-styled";
+import Card from "../card/Card";
+import Comment from "../comment/Comment";
+import { ModalDiv, Modals, Comments } from "./Modal-styled";
 
 function Modal() {
   return (
     <ModalDiv>
       <Modals>
         <Card></Card>
-        <Yorumlar>
+        <Comments>
           <Comment></Comment>
           <Comment></Comment>
           <Comment></Comment>
@@ -17,7 +17,7 @@ function Modal() {
           <Comment></Comment>
           <Comment></Comment>
           <Comment></Comment>
-        </Yorumlar>
+        </Comments>
       </Modals>
     </ModalDiv>
   );

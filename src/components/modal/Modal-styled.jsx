@@ -22,7 +22,7 @@ export const Modals = styled.div`
   /* gap: 1rem; */
   border-radius: 10px;
 `;
-export const Yorumlar = styled.div`
+export const Comments = styled.div`
   width: 100%;
   /* height: max-content; */
   /* background-color: red; */
