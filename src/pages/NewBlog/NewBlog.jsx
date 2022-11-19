@@ -1,18 +1,19 @@
-import Card from "../../components/card/Card";
-import { Cards, HomeCon } from "./NewBlog-styled";
+import { NewBlogCon } from "./NewBlog-styled";
 
 function NewBlog() {
   return (
-    <HomeCon>
-      <h3>DashBoard</h3>
-      <Cards>
-        <Card></Card>
-        <Card></Card>
-        <Card></Card>
-        <Card></Card>
-        <Card></Card>
-      </Cards>
-    </HomeCon>
+    <NewBlogCon>
+      <img src="images/blok.png" alt="" />
+      <h2>New Blog</h2>
+      <label htmlFor="title">Title</label>
+      <input placeholder="Title" id="title" type="text" />
+      <label htmlFor="url">Image URL</label>
+      <input placeholder="Image URL" id="url" type="text" />
+      <label htmlFor="content">Content</label>
+      <textarea placeholder="Content" name="content" id="content"></textarea>
+      <button>SUBMIT</button>
+    </NewBlogCon>
   );
 }
+
 export default NewBlog;

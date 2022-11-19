@@ -1,26 +1,34 @@
 import styled from "styled-components";
 
-export const HomeCon = styled.div`
-  width: 100%;
-  min-height: 90vh;
-  background-color: #ffffff;
+export const NewBlogCon = styled.div`
   display: flex;
-  justify-content: flex-start;
   flex-direction: column;
   align-items: center;
-  padding: 1rem 7rem;
-
-  h3 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+  gap: 1rem;
+  h2 {
+    font-size: 3rem;
   }
-`;
-export const Cards = styled.div`
-  /* background-color: aqua; */
-  height: 40vh;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
+  img {
+    /* border: solid 2px red; */
+    height: 15rem;
+    /* width: 30rem; */
+  }
+  input {
+    font-size: 1.2rem;
+    height: 2rem;
+    width: 20rem;
+  }
+  textarea {
+    height: 10rem;
+    width: 20rem;
+    resize: none;
+  }
+  button {
+    height: 2rem;
+    width: 20rem;
+    background-color: #01bbbb;
+    border: solid 0;
+    border-radius: 5px;
+    color: white;
+  }
 `;
