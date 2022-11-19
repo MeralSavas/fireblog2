@@ -10,7 +10,7 @@ function RegisterFireBase(email, password, data, setError, navigate) {
     .then((userCredential) => {
       // Signed in
       const user = userCredential.user;
-      Update(data);
+      Update(data, user);
     })
     .catch((error) => {
       setError(error.code);
