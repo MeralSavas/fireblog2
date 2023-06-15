@@ -3,7 +3,7 @@ import { FaUserCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 export const NavBarCon = styled.div`
-  background-color: #017a8f;
+  background-color: #017a8d;
   height: 10vh;
   width: 100%;
   display: flex;
